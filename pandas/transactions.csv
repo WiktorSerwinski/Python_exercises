@@ -1,0 +1,4 @@
+transaction_id,customer_id,amount,currency,date
+1,101,200,EUR,2024-02-26
+2,102,150,USD,2024-02-25
+3,101,300,GBP,2024-02-24
