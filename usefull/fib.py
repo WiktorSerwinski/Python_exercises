@@ -21,7 +21,26 @@ def fibo(n):
         print(f)
 
 
-fib(int(input("Podaj n wyrazow ciągu")))
-    
+
+
+
+
+def fibonacci():
+    n = int(input("Podaj liczbe wyrazow ciagu > "))
+    x1,x2=1,1
+    if(n<2):
+        print(f"Fib[1]: {x1}")
+    print(f"Fib[1]: {x1}")
+    print(f"Fib[2]: {x2}")
+    sum= x1+x2
+    for i in range(2,n):
+        x_pom=x2
+        x2 = x1 + x2
+        x1 = x_pom
+        sum+=x2        
+        print(f"Fib[{i+1}]: {x2}")
+    print(sum)
+# fib(int(input("Podaj n wyrazow ciągu")))
+fibonacci()
     
     
