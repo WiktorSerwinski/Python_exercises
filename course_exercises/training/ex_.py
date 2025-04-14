@@ -121,6 +121,29 @@ def has_duplicate(lst: list):
         else:
             d.add(l)
     return False
+
+
+def count_words(sen: str):
+     sen = sen.split()
+     d = Counter(sen)
+     return len(d)
+    
+def rev_sentence(sen: str):
+     sen = sen.split()
+     rev_sen = ""
+     for i in range(-1,-len(sen)-1,-1):
+        rev_sen += " " + sen[i]
+     print(rev_sen.strip())
+    
+    
+def cezar(sentence: str):
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"   
+    ret =""
+    for s in sentence:
+        ret+=alphabet[alphabet.index(s)+3]
+    return ret
+
+print(cezar("ABSC"))
     
     
 
